@@ -1,0 +1,19 @@
+1. Create `pass_one` to build the MNT and MDT from the source code.
+
+2. Set up MNT, MDT, and a counter.
+
+3. Loop through the source code lines.
+
+4. If a line starts with `MACRO`, extract the name and parameters, adding them to MNT and MDT.
+
+5. If a line is `MEND`, mark the end of the macro and add it to MDT.
+
+6. While inside a macro, add each line to MDT.
+
+7. After processing, return the MNT and MDT.
+
+8. Create `pass_two` to expand macro calls.
+
+9. For each line, check for macro calls in the MNT, replace parameters with arguments, and append expanded lines.
+
+10. Return the expanded code and print MNT, MDT, and the expanded output.
