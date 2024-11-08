@@ -1,0 +1,14 @@
+import cv2
+img = cv2.imread("logo.jpg")
+
+cv2.imshow("original image" , img)
+print("image shape : ",img.shape)
+
+dim = (400,400)
+
+resized= cv2.resize(img,dim,interpolation=cv2.INTER_AREA)
+
+cv2.imshow("resized image" , resized)
+print("resized image shape : ",resized.shape)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
